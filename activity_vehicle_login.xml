@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VehicleLoginActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tVehicleNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|textCapCharacters"
+            android:singleLine="true"
+            android:hint="@string/vehicle_no" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone|number"
+            android:singleLine="true"
+            android:hint="@string/mobile" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabViewSlot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_gravity="center"
+        android:text="@string/view_slot"
+        app:icon="@drawable/ic_location"
+        android:textColor="@color/white"
+        app:iconTint="@color/white"
+        android:onClick="viewSlot"/>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_gravity="center"
+        android:text="@string/parking_places"
+        app:icon="@drawable/ic_location"
+        android:textColor="@color/white"
+        app:iconTint="@color/white"
+        android:onClick="openMap"/>
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_gravity="center"
+        android:text="@string/scan_qr"
+        app:icon="@drawable/ic_qr_code"
+        android:textColor="@color/white"
+        app:iconTint="@color/white"
+        android:onClick="scanQR"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
